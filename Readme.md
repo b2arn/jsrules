@@ -5,7 +5,7 @@
 * Use [jswiki](https://github.com/bebraw/jswiki/wiki) as guide to JS libraries
 * Use `"use strict";` everywhere
 * Make [custom errors](https://github.com/dimsmol/nerr) right
-* [Introduce library](doc/libraries.md) whenever it's possible
+* [Introduce library](/dimsmol/jsrules/doc/libraries.md) whenever it's possible
 * Use right [blocks style](doc/block_style.md)
 * [Avoid](doc/init_in_ctor.md) any kind of `init()` calls in constructor
 * Remove listeners and do [further cleanup](doc/cleanup.md)

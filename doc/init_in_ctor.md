@@ -1,8 +1,8 @@
 ## Avoid any kind of init() calls in constructor
 
-The problem will arise in subclasses. Common practice for subclass constructors is to call superclass constructor and then perform any additional actions having ready to use superclass instance in `this`.
+The problem will arise in subclasses. Common practice for subclass constructors is to call superclass constructor first and then perform any additional actions having ready to use superclass instance in `this`.
 
-But having init() call in constructor of superclass, you will have a problem. init() method of subclass may depend on subclass members initialization, so must be called last. But the only way to do it is to place superclass constructor call last as well (because it calls init()). And if you place superclass constructor last, you cannot rely on having ready to use superclass instance in `this`.
+But having init() call in constructor of superclass, you will get a problem. init() method of subclass may depend on subclass members initialization, so must be called last. But the only way to do it is to place superclass constructor call last as well (because it calls init()). And if you place superclass constructor last, you cannot rely on having ready to use superclass instance in `this`.
 
 Example:
 
@@ -19,13 +19,13 @@ A.prototype.init = function () {
 
 
 var B = function (a) {
-	// want to call superclass constructor to have this.a ready
-	// but cannot do it because init() will be called before this.b is ready
+	// want to call superclass constructor first to have this.a ready
+	// but cannot do it because init() will be called too early (before this.b is ready)
 	// A.call(this, a); // wrong place to call
 	this.b = this.a + 5; // want to have superclass members initialized here
-	// want to call superclass constructor last to have init() call when this.b is ready
-	// but cannot do it, because need this.a to be ready above
-	// A.call(this, a); // wrong place to call also
+	// want to call superclass constructor last to have init() call after this.b is ready
+	// but cannot do it because need this.a to be ready above
+	// A.call(this, a); // wrong place to call either
 };
 inherits(B, A);
 

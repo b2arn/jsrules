@@ -18,7 +18,7 @@
 
 ## node.js
 
-* Use [project template](https://github.com/dimsmol/nprj) (you can download it as an [archive](nprj.tgz))
+* Use [project template](https://github.com/dimsmol/nprj)
 * Properly use [require and exports](https://github.com/dimsmol/jsrules/blob/master/doc/node/require_exports.md) in your modules
 * Use [async](https://github.com/caolan/async)
 * And other useful [modules](https://github.com/dimsmol/jsrules/blob/master/doc/node/modules.md)

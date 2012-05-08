@@ -7,6 +7,7 @@
 * [sockjs](http://sockjs.org) - websockets support
 * [async](https://github.com/caolan/async) - asynchronous programming
 * [args](https://github.com/dimsmol/args) - command line arguments parser
+* [ops](https://github.com/dimsmol/ops) - applies defaults to options for your function and classes
 * [pg](https://github.com/brianc/node-postgres) - PostgreSQL client
 
 ### Take a look at

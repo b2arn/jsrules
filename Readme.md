@@ -5,11 +5,11 @@
 * Use [jswiki](https://github.com/bebraw/jswiki/wiki) as guide to JS libraries
 * Use `"use strict";` everywhere
 * Make [custom errors](https://github.com/dimsmol/nerr) right
-* [Introduce library](/dimsmol/jsrules/doc/libraries.md) whenever it's possible
-* Use right [blocks style](doc/block_style.md)
-* [Avoid](doc/init_in_ctor.md) any kind of `init()` calls in constructor
-* Remove listeners and do [further cleanup](doc/cleanup.md)
-* Don't use `for (var k in arr)` for [iterating arrays](doc/iterate_array.md)
+* [Introduce library](https://github.com/dimsmol/jsrules/blob/master/doc/libraries.md) whenever it's possible
+* Use right [blocks style](https://github.com/dimsmol/jsrules/blob/master/doc/block_style.md)
+* Avoid any kind of [init() calls in constructor](https://github.com/dimsmol/jsrules/blob/master/doc/init_in_ctor.md)
+* Remove listeners and do [further cleanup](https://github.com/dimsmol/jsrules/blob/master/doc/cleanup.md)
+* Don't use `for (var k in arr)` for [iterating arrays](https://github.com/dimsmol/jsrules/blob/master/doc/iterate_array.md)
 * Use [polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills), but with care
 * `catch(err)` doesn't need `var err;`
 * Use `err` (not `error` or `exc`) for error variables
@@ -19,9 +19,9 @@
 ## node.js
 
 * Use [project template](https://github.com/dimsmol/nprj) (you can download it as an [archive](nprj.tgz))
-* Properly use [require and exports](doc/node/require_exports.md) in your modules
+* Properly use [require and exports](https://github.com/dimsmol/jsrules/blob/master/doc/node/require_exports.md) in your modules
 * Use [async](https://github.com/caolan/async)
-* And other useful [modules](doc/node/modules.md)
+* And other useful [modules](https://github.com/dimsmol/jsrules/blob/master/doc/node/modules.md)
 * Use `path.join()`
 * Don't write "for node.js" in package.json description
 * **Do** write "for node.js" in description on github

@@ -15,6 +15,7 @@
 * Use `err` (not `error` or `exc`) for error variables
 * Know about [harmony](http://wiki.ecmascript.org/doku.php?id=harmony:proposals) - it is already partially available in browsers and node
 * Use Object.defineProperty() when available (not `__defineGetter__`/`__defineSetter__`)
+* Never us `this.constructor.super_` to [access superclass](https://github.com/dimsmol/jsrules/blob/master/doc/super.md)
 
 ## node.js
 
